@@ -11,17 +11,22 @@ namespace CSLight
     {
         static void Main(string[] args)
         {
-            string spaceshipName = "U.S.S. Discovery One";
-            char spaceshipClassLetter = 'A';
-            bool isSpaceshipActive;
-            ushort spaceshipMaxHealth = 2000;
-            int spaceshipMaxCrew = 10;
-            byte spaceshipCurrentCrew = 8;
-            short spaceTemperature = -120;
-            float spaceshipCurrentSpeed = 120.5f;
-            uint spaceshipMaxFuel = 100;
-            double spaceshipCurrentFuel = 85.5;
-            Console.ReadKey();
+            Console.WriteLine("### Анкета ###\n");
+
+            Console.Write("Как вас зовут?\n");
+            string name = Console.ReadLine();
+
+            Console.Write("\nСколько Вам лет?\n");
+            int age = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("\nКто вы по профессии?\n");
+            string profession = Console.ReadLine();
+
+            Console.WriteLine();
+            Console.WriteLine("### Информация о Вас ###");
+            Console.WriteLine("Вас зовут " + name + ", вам: " + age + " года/лет, вы " + profession + ".");
+
+            Console.ReadLine();
         }
     }
 }
