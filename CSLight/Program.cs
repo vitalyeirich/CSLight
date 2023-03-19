@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,15 +14,14 @@ namespace CSLight
             string spaceshipName = "U.S.S. Discovery One";
             char spaceshipClassLetter = 'A';
             bool isSpaceshipActive;
-            int spaceshipMaxHealth = 2000;
-            int spaceshipCurrentHealth = 2000;
+            ushort spaceshipMaxHealth = 2000;
             int spaceshipMaxCrew = 10;
-            int spaceshipCurrentCrew = 8;
-            float spaceshipMaxSpeed = 200;
+            byte spaceshipCurrentCrew = 8;
+            short spaceTemperature = -120;
             float spaceshipCurrentSpeed = 120.5f;
-            float spaceshipMaxFuel = 100;
-            float spaceshipCurrentFuel = 85.5f;
-            
+            uint spaceshipMaxFuel = 100;
+            double spaceshipCurrentFuel = 85.5;
+            Console.ReadKey();
         }
     }
 }
